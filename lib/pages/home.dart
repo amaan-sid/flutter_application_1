@@ -241,7 +241,7 @@ class HomePage extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        Container(
+        SizedBox(
           height: 120,
           child: ListView.separated(
             itemCount: categories.length,
@@ -309,7 +309,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               child: SvgPicture.asset('assets/icons/Search.svg'),
             ),
-            suffixIcon: Container(
+            suffixIcon: SizedBox(
               width: 100,
               child: IntrinsicHeight(
                 child: Row(
